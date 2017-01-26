@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "name": "Crux",
+      "id": 0,
+      "strength": 50,
+      "teacher": "Sumeet"
+    },
+    {
+      "name": "Launchpad",
+      "id": 1,
+      "strength": 45,
+      "teacher": "Prateek"
+    },
+    {
+      "name": "Pandora",
+      "id": 2,
+      "strength": 40,
+      "teacher": "Arnav"
+    },
+    {
+      "name": "Elixir",
+      "id": 3,
+      "strength": 35,
+      "teacher": "Arnav"
+    }
+  ]
+}
