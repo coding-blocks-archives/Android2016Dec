@@ -56,9 +56,14 @@ public class TodoRecyclerViewAdapter extends RecyclerView.Adapter<TodoRecyclerVi
         notifyDataSetChanged();
     }
 
+    public interface OnDeleteListener {
+        public void onDelete(int position);
+    }
+
     class TodoViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvTask;
+        OnDeleteListener odl;
 
         public TodoViewHolder(View itemView) {
             super(itemView);

@@ -13,7 +13,7 @@ import in.championswimmer.databases2.db.tables.Todos;
 public class TodoDbHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "Todos.db";
-    public static final int DB_VER = 1;
+    public static final int DB_VER = 2;
 
     public interface Consts {
         String LBR = " ( ";
@@ -23,6 +23,7 @@ public class TodoDbHelper extends SQLiteOpenHelper {
 
         String TYPE_INT = " INTEGER ";
         String TYPE_TEXT = " TEXT ";
+        String TYPE_BOOLEAN = " BOOLEAN ";
         String TYPE_PK = " PRIMARY KEY ";
         String TYPE_AI = " AUTOINCREMENT ";
     }
@@ -41,6 +42,10 @@ public class TodoDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+        if (newVersion == 2 && oldVersion == 1) {
+            db.execSQL(Todos.CMD_UPDATE_1_2);
+        }
 
     }
 }
