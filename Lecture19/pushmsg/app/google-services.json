@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "388602190494",
+    "firebase_url": "https://push-msg-app-fea8c.firebaseio.com",
+    "project_id": "push-msg-app-fea8c",
+    "storage_bucket": "push-msg-app-fea8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388602190494:android:a9cddf6ae1ec3efd",
+        "android_client_info": {
+          "package_name": "com.codingblocks.pushmsg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388602190494-9pgochtv5p3pqieb5iijbtph5bto0nvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codingblocks.pushmsg",
+            "certificate_hash": "F3D76BDFF58C555D465E2F47C97BEEB2C1F77416"
+          }
+        },
+        {
+          "client_id": "388602190494-6ok4ndfh5lo7ebssdsigja1krbgvo0jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdQNOeJgIW0suk5V-Al6xRSYd-je-FGfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388602190494-6ok4ndfh5lo7ebssdsigja1krbgvo0jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
