@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.codingblocks.unittestsinterestcalculator.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/etPrincipal"
+        android:hint="Principal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/etPrincipal"
+        android:layout_alignLeft="@+id/etPrincipal"
+        android:layout_alignStart="@+id/etPrincipal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/etInterest"
+        android:hint="Interest" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/etInterest"
+        android:layout_alignLeft="@+id/etInterest"
+        android:layout_alignStart="@+id/etInterest"
+        android:layout_marginTop="18dp"
+        android:id="@+id/etYears"
+        android:hint="Years" />
+
+    <Button
+        android:text="CALCULATE INTEREST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnCalcInterest" />
+
+    <TextView
+        android:text="AMOUNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalcInterest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tvAmount"
+        android:textSize="30sp" />
+</RelativeLayout>
